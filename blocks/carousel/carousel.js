@@ -13,6 +13,7 @@ export default function decorate(block) {
       block.scrollTo({ top: 0, left: row.offsetLeft - row.parentNode.offsetLeft, behavior: 'smooth' });
       [...buttons.children].forEach((r) => r.classList.remove('selected'));
       button.classList.add('selected');
+      console.log('carousel clicked')
     });
     buttons.append(button);
   });
